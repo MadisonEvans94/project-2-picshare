@@ -2,6 +2,8 @@ import React from "react";
 import PieChart from "../../components/PieChart/PieChart";
 import { useState, useEffect } from "react";
 
+const genreData = [];
+
 function countGenres(masterList) {
 	let tempGenres = {
 		genre1: 0,
@@ -43,7 +45,7 @@ const Statistics = ({ masterList }) => {
 			{
 				label: "Distribution of Genres",
 
-				data: [],
+				data: genreData,
 				backgroundColor: [
 					"rgba(255, 99, 132, 1)",
 					"rgba(54, 162, 235, 1)",
@@ -70,6 +72,9 @@ const Statistics = ({ masterList }) => {
 		setGenreCount(temp);
 	}, [masterList]);
 
+	useEffect(() => {
+		console.log("genreCount changed");
+	}, [genreCount]);
 	return (
 		<div className="page-container">
 			<h2>Statistics</h2>
