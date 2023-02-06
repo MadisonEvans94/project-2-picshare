@@ -16,7 +16,6 @@ function App() {
 					<Route path="/find-by-user" element={<FindByUser />} />
 					<Route path="/statistics" element={<Statistics />} />
 				</Routes>
-				<Home />
 			</Router>
 		</>
 	);

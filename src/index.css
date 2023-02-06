@@ -46,3 +46,9 @@ a {
 	justify-content: center;
 	align-items: space-between;
 }
+
+.page-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
