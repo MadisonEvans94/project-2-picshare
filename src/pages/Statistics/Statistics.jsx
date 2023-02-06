@@ -63,7 +63,7 @@ const formatData = (masterList) => {
 const Statistics = ({ masterList }) => {
 	return (
 		<div className="page-container">
-			<h2>Statistics</h2>
+			<h2>Genre Stats</h2>
 			<PieChart formattedData={formatData(masterList)} />
 		</div>
 	);

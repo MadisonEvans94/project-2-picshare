@@ -41,7 +41,7 @@ const UploadPage = ({ onAddItem }) => {
 	}
 
 	return (
-		<div className="upload-form">
+		<div className="upload-form ">
 			<h1>Add a New Item</h1>
 			<form onSubmit={handleSubmit}>
 				<input
