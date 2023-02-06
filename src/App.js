@@ -13,7 +13,7 @@ function App() {
 	const [searchText, setSearchText] = useState("");
 
 	useEffect(() => {
-		fetch("http://localhost:3000/items")
+		fetch("http://localhost:3200/items")
 			.then((res) => res.json())
 			.then((data) => setMasterList(data));
 	}, []);

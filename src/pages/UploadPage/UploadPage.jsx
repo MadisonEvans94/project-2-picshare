@@ -29,7 +29,7 @@ const UploadPage = ({ onAddItem }) => {
 			des: formData.des,
 		};
 
-		fetch("http://localhost:3000/items", {
+		fetch("http://localhost:3200/items", {
 			method: "POST",
 			headers: { "Content-Type": "application/json" },
 			body: JSON.stringify(newItem),

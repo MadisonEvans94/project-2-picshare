@@ -1,216 +1,208 @@
 {
-  "items": [
-    {
-      "id": 1,
-      "artist": "Them",
-      "name": "Sun",
-      "image": "https://images.squarespace-cdn.com/content/v1/52c4a7bbe4b0f4e69d94616f/1470938099754-4DMHBO56C3U0SYM581MU/3littlebirds_artwork_02_sml.jpg?format=500w",
-      "cat": "Painting",
-      "des": "A really nice Sculpture",
-      "fav": false
-    },
-    {
-      "id": 2,
-      "artist": "He",
-      "name": "Moon",
-      "image": "https://www.designindaba.com/sites/default/files/node/news/22299/gallery/62fa4e26419207.563552f227d17.jpg",
-      "cat": "Sculpture",
-      "des": "A really nice Sculpture",
-      "fav": true
-    },
-    {
-      "id": 3,
-      "artist": "She",
-      "name": "Stars",
-      "image": "https://i.pinimg.com/564x/c5/8c/6e/c58c6e78f7cb6c510207d0f0e3eaf2d0.jpg",
-      "cat": "Pottery",
-      "des": "A really nice Sculpture",
-      "fav": true
-    },
-    {
-      "id": 4,
-      "artist": "Me",
-      "name": "Cloud",
-      "image": "http://pilerats.com/assets/Uploads/_resampled/resizedimage600750-taj1.jpg",
-      "cat": "Painting",
-      "des": "A really nice Sculpture",
-      "fav": true
-    },
-    {
-      "id": 5,
-      "name": "test",
-      "artist": "test",
-      "image": "https://cdnb.artstation.com/p/assets/images/images/052/049/571/medium/creative-gaga-samji-1653540419562.jpg?1658835336",
-      "cat": "Sculpture",
-      "des": "test",
-      "fav": false
-    },
-    {
-      "name": "Illustrious Collar",
-      "artist": "Samji",
-      "image": "https://cdna.artstation.com/p/assets/images/images/052/049/560/medium/creative-gaga-samji-1654577661304.jpg?1658835323",
-      "cat": "Digital Art",
-      "des": "Illustrious Collar",
-      "id": 6,
-      "fav": true
-    },
-    {
-      "name": "Flames of Jealousy",
-      "artist": "Samji",
-      "image": "https://media.licdn.com/dms/image/C5622AQFMdEGVdm6eKA/feedshare-shrink_800/0/1647405477932?e=1678924800&v=beta&t=3-eE9QGsfiRT7VaGYS6Nr6zsTOJHWMxLAEzM4NzHUqE",
-      "cat": "Digital Art",
-      "des": "Flames of Jealousy",
-      "id": 7,
-      "fav": true
-    },
-    {
-      "name": "Exuberant Perception",
-      "artist": "Samji",
-      "image": "https://i.pinimg.com/564x/62/6a/4b/626a4b7937bc571ef560a9b2551c531e.jpg",
-      "cat": "Digital Art",
-      "des": "Exuberant Perception",
-      "id": 8,
-      "fav": true
-    },
-    {
-      "name": "Dictator of Belief",
-      "artist": "Samji",
-      "image": "https://cdnb.artstation.com/p/assets/images/images/051/518/201/medium/creative-gaga-samji-1652155490192.jpg?1657514519",
-      "cat": "Digital Art",
-      "des": "Dictator of Belief",
-      "id": 9
-    },
-    {
-      "name": "Oblivious Ambition",
-      "artist": "Samji",
-      "image": "https://cdnb.artstation.com/p/assets/images/images/051/518/205/medium/creative-gaga-samji-1652849619720.jpg?1657514534",
-      "cat": "Digital Art",
-      "des": "Oblivious Ambition",
-      "id": 10
-    },
-    {
-      "name": "Evening Sees",
-      "artist": "Taj Francis",
-      "image": "https://wowxwow.com/wp-content/uploads/2020/02/Taj-Francis-Evening-Sees-800x900.jpg",
-      "cat": "Modern Art",
-      "des": "Evening Sees",
-      "id": 11,
-      "fav": true
-    },
-    {
-      "name": "Malicious Command",
-      "artist": "Sury",
-      "image": "https://bluethumb.com.au/blog/wp-content/uploads/cache/2012/11/sw-12/1445701316.jpg",
-      "cat": "Surrealism",
-      "des": "Malicious Command",
-      "id": 12
-    },
-    {
-      "name": "Mistake of Service",
-      "artist": "Sury",
-      "image": "https://davidcharlesfox.com/blg/dcf/user_img/20220504/1651736599924291.webp",
-      "cat": "Surrealism",
-      "des": "Mistake of Service",
-      "id": 13
-    },
-    {
-      "name": "Mistake of Service",
-      "artist": "Ms. Niederman",
-      "image": "https://niedermanartclass.weebly.com/uploads/9/0/0/3/90036805/screen-shot-2019-07-12-at-9-47-14-am.png",
-      "cat": "Surrealism",
-      "des": "Mistake of Service",
-      "id": 14
-    },
-    {
-      "name": "The PhotoPhore",
-      "artist": "Henrietta Harris",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBrBUcqX5Z9GEG1gM7Vg7vWsjD4uiaNv65ecUA9NWQaUNttG_pj6vb4GHHnPytWXvxF6Q&usqp=CAU",
-      "cat": "Surrealism",
-      "des": "The PhotoPhore",
-      "id": 15,
-      "fav": true
-    },
-    {
-      "name": "Colossal",
-      "artist": "Henrietta Harris",
-      "image": "https://www.thisiscolossal.com/wp-content/uploads/2012/12/flee-640x939.jpg",
-      "cat": "Surrealism",
-      "des": "Colossal",
-      "id": 16
-    },
-    {
-      "name": "Shadows",
-      "artist": "Henrietta Harris",
-      "image": "https://highlarks3bucket.s3.us-east-2.amazonaws.com/highlark/wp-content/uploads/2017/04/Highlark-Henrietta-Harris-Four-Stars.jpg",
-      "cat": "Surrealism",
-      "des": "Shadows",
-      "id": 17,
-      "fav": true
-    },
-    {
-      "name": "IGNANT",
-      "artist": "Henrietta Harris",
-      "image": "https://www.ignant.com/wp-content/uploads/2014/09/Henrietta_Harris_01-360x507.jpg",
-      "cat": "Surrealism",
-      "des": "IGNANT",
-      "id": 18
-    },
-    {
-      "name": "Jealous Tradition",
-      "artist": "Afarin Sajedi",
-      "image": "https://www.photographize.co/articles/afarinsajedi/files/stacks-image-6210a1d.jpg",
-      "cat": "Surrealism",
-      "des": "Jealous Tradition",
-      "id": 19
-    },
-    {
-      "name": "Honesty of Attraction",
-      "artist": "Sury",
-      "image": "https://uploads3.wikiart.org/images/kay-sage/i-saw-three-cities-1944.jpg!Large.jpg",
-      "cat": "Surrealism",
-      "des": "Honesty of Attraction",
-      "id": 20
-    },
-    {
-      "name": "Conscious Crime",
-      "artist": "Sury",
-      "image": "https://az334033.vo.msecnd.net/images-7/indefinite-divisibility-yves-tanguy-1942-c7a8a4cb.jpg",
-      "cat": "Surrealism",
-      "des": "Conscious Crime",
-      "id": 21
-    },
-    {
-      "name": "5th Vessel",
-      "artist": "Taj Francis",
-      "image": "https://wowxwow.com/wp-content/uploads/2019/07/Taj-Francis-5th-Vessel.jpg",
-      "cat": "Digital Art",
-      "des": "5th Vessel",
-      "id": 22,
-      "fav": true
-    },
-    {
-      "name": "Reality of Perseverance",
-      "artist": "Taj Francis",
-      "image": "https://i.pinimg.com/564x/ae/79/ac/ae79ac708d29e2803fba4755f3ec0a0c.jpg",
-      "cat": "Digital Art",
-      "des": "Reality of Perseverance",
-      "id": 23
-    },
-    {
-      "name": "Crash of Belief",
-      "artist": "Taj Francis",
-      "image": "https://i.pinimg.com/564x/6b/3f/e0/6b3fe01e87eb3f21854e59cc5166b013.jpg",
-      "cat": "Digital Art",
-      "des": "Crash of Belief",
-      "id": 24
-    },
-    {
-      "name": "In the works ",
-      "artist": "Test Artist ",
-      "image": "https://images.unsplash.com/photo-1520408222757-6f9f95d87d5d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cG90dGVyeXxlbnwwfHwwfHw%3D&w=1000&q=80",
-      "cat": "Pottery",
-      "des": "A beautiful vase in the making ",
-      "id": 25
-    }
-  ]
+	"items": [
+		{
+			"id": 1,
+			"artist": "Them",
+			"name": "Sun",
+			"image": "https://images.squarespace-cdn.com/content/v1/52c4a7bbe4b0f4e69d94616f/1470938099754-4DMHBO56C3U0SYM581MU/3littlebirds_artwork_02_sml.jpg?format=500w",
+			"cat": "Painting",
+			"des": "A really nice Sculpture",
+			"fav": false
+		},
+		{
+			"id": 2,
+			"artist": "He",
+			"name": "Moon",
+			"image": "https://www.designindaba.com/sites/default/files/node/news/22299/gallery/62fa4e26419207.563552f227d17.jpg",
+			"cat": "Sculpture",
+			"des": "A really nice Sculpture",
+			"fav": true
+		},
+		{
+			"id": 3,
+			"artist": "She",
+			"name": "Stars",
+			"image": "https://i.pinimg.com/564x/c5/8c/6e/c58c6e78f7cb6c510207d0f0e3eaf2d0.jpg",
+			"cat": "Pottery",
+			"des": "A really nice Sculpture",
+			"fav": true
+		},
+		{
+			"id": 4,
+			"artist": "Me",
+			"name": "Cloud",
+			"image": "http://pilerats.com/assets/Uploads/_resampled/resizedimage600750-taj1.jpg",
+			"cat": "Painting",
+			"des": "A really nice Sculpture",
+			"fav": true
+		},
+		{
+			"id": 5,
+			"name": "test",
+			"artist": "test",
+			"image": "https://cdnb.artstation.com/p/assets/images/images/052/049/571/medium/creative-gaga-samji-1653540419562.jpg?1658835336",
+			"cat": "Sculpture",
+			"des": "test",
+			"fav": false
+		},
+		{
+			"name": "Illustrious Collar",
+			"artist": "Samji",
+			"image": "https://cdna.artstation.com/p/assets/images/images/052/049/560/medium/creative-gaga-samji-1654577661304.jpg?1658835323",
+			"cat": "Digital Art",
+			"des": "Illustrious Collar",
+			"id": 6,
+			"fav": true
+		},
+		{
+			"name": "Flames of Jealousy",
+			"artist": "Samji",
+			"image": "https://media.licdn.com/dms/image/C5622AQFMdEGVdm6eKA/feedshare-shrink_800/0/1647405477932?e=1678924800&v=beta&t=3-eE9QGsfiRT7VaGYS6Nr6zsTOJHWMxLAEzM4NzHUqE",
+			"cat": "Digital Art",
+			"des": "Flames of Jealousy",
+			"id": 7,
+			"fav": true
+		},
+		{
+			"name": "Exuberant Perception",
+			"artist": "Samji",
+			"image": "https://i.pinimg.com/564x/62/6a/4b/626a4b7937bc571ef560a9b2551c531e.jpg",
+			"cat": "Digital Art",
+			"des": "Exuberant Perception",
+			"id": 8,
+			"fav": true
+		},
+		{
+			"name": "Dictator of Belief",
+			"artist": "Samji",
+			"image": "https://cdnb.artstation.com/p/assets/images/images/051/518/201/medium/creative-gaga-samji-1652155490192.jpg?1657514519",
+			"cat": "Digital Art",
+			"des": "Dictator of Belief",
+			"id": 9
+		},
+		{
+			"name": "Oblivious Ambition",
+			"artist": "Samji",
+			"image": "https://cdnb.artstation.com/p/assets/images/images/051/518/205/medium/creative-gaga-samji-1652849619720.jpg?1657514534",
+			"cat": "Digital Art",
+			"des": "Oblivious Ambition",
+			"id": 10
+		},
+		{
+			"name": "Evening Sees",
+			"artist": "Taj Francis",
+			"image": "https://wowxwow.com/wp-content/uploads/2020/02/Taj-Francis-Evening-Sees-800x900.jpg",
+			"cat": "Modern Art",
+			"des": "Evening Sees",
+			"id": 11,
+			"fav": true
+		},
+		{
+			"name": "Malicious Command",
+			"artist": "Sury",
+			"image": "https://bluethumb.com.au/blog/wp-content/uploads/cache/2012/11/sw-12/1445701316.jpg",
+			"cat": "Surrealism",
+			"des": "Malicious Command",
+			"id": 12
+		},
+		{
+			"name": "Mistake of Service",
+			"artist": "Sury",
+			"image": "https://davidcharlesfox.com/blg/dcf/user_img/20220504/1651736599924291.webp",
+			"cat": "Surrealism",
+			"des": "Mistake of Service",
+			"id": 13
+		},
+		{
+			"name": "Mistake of Service",
+			"artist": "Ms. Niederman",
+			"image": "https://niedermanartclass.weebly.com/uploads/9/0/0/3/90036805/screen-shot-2019-07-12-at-9-47-14-am.png",
+			"cat": "Surrealism",
+			"des": "Mistake of Service",
+			"id": 14
+		},
+		{
+			"name": "The PhotoPhore",
+			"artist": "Henrietta Harris",
+			"image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBrBUcqX5Z9GEG1gM7Vg7vWsjD4uiaNv65ecUA9NWQaUNttG_pj6vb4GHHnPytWXvxF6Q&usqp=CAU",
+			"cat": "Surrealism",
+			"des": "The PhotoPhore",
+			"id": 15,
+			"fav": true
+		},
+		{
+			"name": "Colossal",
+			"artist": "Henrietta Harris",
+			"image": "https://www.thisiscolossal.com/wp-content/uploads/2012/12/flee-640x939.jpg",
+			"cat": "Surrealism",
+			"des": "Colossal",
+			"id": 16
+		},
+		{
+			"name": "Shadows",
+			"artist": "Henrietta Harris",
+			"image": "https://highlarks3bucket.s3.us-east-2.amazonaws.com/highlark/wp-content/uploads/2017/04/Highlark-Henrietta-Harris-Four-Stars.jpg",
+			"cat": "Surrealism",
+			"des": "Shadows",
+			"id": 17,
+			"fav": true
+		},
+		{
+			"name": "IGNANT",
+			"artist": "Henrietta Harris",
+			"image": "https://www.ignant.com/wp-content/uploads/2014/09/Henrietta_Harris_01-360x507.jpg",
+			"cat": "Surrealism",
+			"des": "IGNANT",
+			"id": 18
+		},
+		{
+			"name": "Jealous Tradition",
+			"artist": "Afarin Sajedi",
+			"image": "https://www.photographize.co/articles/afarinsajedi/files/stacks-image-6210a1d.jpg",
+			"cat": "Surrealism",
+			"des": "Jealous Tradition",
+			"id": 19
+		},
+		{
+			"name": "Honesty of Attraction",
+			"artist": "Sury",
+			"image": "https://uploads3.wikiart.org/images/kay-sage/i-saw-three-cities-1944.jpg!Large.jpg",
+			"cat": "Surrealism",
+			"des": "Honesty of Attraction",
+			"id": 20
+		},
+		{
+			"name": "Conscious Crime",
+			"artist": "Sury",
+			"image": "https://az334033.vo.msecnd.net/images-7/indefinite-divisibility-yves-tanguy-1942-c7a8a4cb.jpg",
+			"cat": "Surrealism",
+			"des": "Conscious Crime",
+			"id": 21
+		},
+		{
+			"name": "5th Vessel",
+			"artist": "Taj Francis",
+			"image": "https://wowxwow.com/wp-content/uploads/2019/07/Taj-Francis-5th-Vessel.jpg",
+			"cat": "Digital Art",
+			"des": "5th Vessel",
+			"id": 22,
+			"fav": true
+		},
+		{
+			"name": "Reality of Perseverance",
+			"artist": "Taj Francis",
+			"image": "https://i.pinimg.com/564x/ae/79/ac/ae79ac708d29e2803fba4755f3ec0a0c.jpg",
+			"cat": "Digital Art",
+			"des": "Reality of Perseverance",
+			"id": 23
+		},
+		{
+			"name": "Crash of Belief",
+			"artist": "Taj Francis",
+			"image": "https://i.pinimg.com/564x/6b/3f/e0/6b3fe01e87eb3f21854e59cc5166b013.jpg",
+			"cat": "Digital Art",
+			"des": "Crash of Belief",
+			"id": 24
+		}
+	]
 }

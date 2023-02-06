@@ -4,32 +4,25 @@ import { useState, useEffect } from "react";
 
 const Card = ({ id, name, image, artist, cat, des }) => {
 	const [likes, setLikes] = useState(0);
-	/**
-	 * TODO: in future iteration, the likes will be persistent in database.
-	 * the like state pertains to singular instance of like. Will need to have a useEffect hook
-	 * that implements a patch request. page will optimistically render based on if user has
-	 * liked or disliked the post
-	 */
-
 	const [favorite, setFavorite] = useState(false);
 	const [favText, setFavText] = useState("Add Favorite");
 	const [favCount, setFavCount] = useState(0);
 
 	useEffect(() => {
-		fetch(`http://localhost:3000/items/${id}`)
+		fetch(`http://localhost:3200/items/${id}`)
 			.then((res) => res.json())
 			.then((data) => setFavorite(data.fav));
 	}, []);
 
 	useEffect(() => {
-		fetch(`http://localhost:3000/items/${id}`)
+		fetch(`http://localhost:3200/items/${id}`)
 			.then((res) => res.json())
 			.then((data) => console.log(JSON.stringify(data.favText)));
 	}, []);
 
 	console.log(favorite, favText);
 	function handlePatch() {
-		fetch(`http://localhost:3000/items/${id}`, {
+		fetch(`http://localhost:3200/items/${id}`, {
 			method: "PATCH",
 			headers: {
 				"content-type": "application/json",
@@ -59,6 +52,7 @@ const Card = ({ id, name, image, artist, cat, des }) => {
 		}
 	}
 
+	//[ ] this functionality might need a second look. Commenting out for now
 	function handleDivId() {
 		if (favorite) {
 			// const element = document.getElementById(`${id}`);
@@ -82,6 +76,7 @@ const Card = ({ id, name, image, artist, cat, des }) => {
 						backgroundColor: "gray",
 					}}
 					src={image}
+					alt="artwork"
 				/>
 			</div>
 			<h4>{name}</h4>
