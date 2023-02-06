@@ -11,6 +11,7 @@ function App() {
 		<>
 			<Router>
 				<Nav />
+
 				<Routes>
 					<Route exact path="/" element={<Home />} />
 					<Route path="/find-by-user" element={<FindByUser />} />
