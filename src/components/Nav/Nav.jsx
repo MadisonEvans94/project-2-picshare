@@ -11,8 +11,8 @@ const Nav = () => {
 			<Link to="/statistics">
 				<h2>Statistics</h2>
 			</Link>
-			<Link to="/find-by-artist">
-				<h2>Find By Artist</h2>
+			<Link to="/upload">
+				<h2>Upload</h2>
 			</Link>
 		</div>
 	);
