@@ -1,7 +1,7 @@
 import React from "react";
 import PieChart from "../../components/PieChart/PieChart";
 const formatData = (masterList) => {
-	const genreCount = [0, 0, 0, 0, 0];
+	const genreCount = [0, 0, 0, 0, 0, 0];
 	masterList.forEach((artwork) => {
 		switch (artwork.cat) {
 			case "Painting":
@@ -26,10 +26,17 @@ const formatData = (masterList) => {
 		}
 	});
 	return {
-		labels: ["genre 1", "genre 2", "genre 3", "genre 4", "genre 5"],
+		labels: [
+			"Painting",
+			"Sculpture",
+			"Pottery",
+			"Modern Art",
+			"Surrealism",
+			"Digital Art",
+		],
 		datasets: [
 			{
-				label: "Distribution of Genres",
+				label: "Number of Posts",
 				data: genreCount,
 				backgroundColor: [
 					"rgba(255, 99, 132, 1)",
@@ -37,6 +44,7 @@ const formatData = (masterList) => {
 					"rgba(255, 206, 86, 1)",
 					"rgba(75, 192, 192, 1)",
 					"rgba(153, 102, 255, 1)",
+					"rgba(53, 20, 255, 1)",
 				],
 				borderColor: [
 					"rgba(255, 99, 132, 1)",
@@ -44,6 +52,7 @@ const formatData = (masterList) => {
 					"rgba(255, 206, 86, 1)",
 					"rgba(75, 192, 192, 1)",
 					"rgba(153, 102, 255, 1)",
+					"rgba(53, 20, 255, 1)",
 				],
 				borderWidth: 1,
 			},
