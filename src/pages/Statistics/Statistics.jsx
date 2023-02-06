@@ -5,14 +5,20 @@ const formatData = (masterList) => {
 	masterList.forEach((artwork) => {
 		switch (artwork.cat) {
 			case "Painting":
+			case "Sculpture":
 			case "Pottery":
-			case "Modernism":
+			case "Modern Art":
 			case "Surrealism":
-			case "Poetry":
+			case "Digital Art":
 				genreCount[
-					["Painting", "Pottery", "Modernism", "Surrealism", "Poetry"].indexOf(
-						artwork.cat
-					)
+					[
+						"Painting",
+						"Sculpture",
+						"Pottery",
+						"Modern Art",
+						"Surrealism",
+						"Digital Art",
+					].indexOf(artwork.cat)
 				]++;
 				break;
 			default:
