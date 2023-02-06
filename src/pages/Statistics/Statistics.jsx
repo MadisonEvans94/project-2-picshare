@@ -1,14 +1,29 @@
 import React from "react";
 import PieChart from "../../components/PieChart/PieChart";
-import { useState, useEffect } from "react";
-
-const formatData = (genreCount) => {
+const formatData = (masterList) => {
+	const genreCount = [0, 0, 0, 0, 0];
+	masterList.forEach((artwork) => {
+		switch (artwork.cat) {
+			case "Painting":
+			case "Pottery":
+			case "Modernism":
+			case "Surrealism":
+			case "Poetry":
+				genreCount[
+					["Painting", "Pottery", "Modernism", "Surrealism", "Poetry"].indexOf(
+						artwork.cat
+					)
+				]++;
+				break;
+			default:
+				break;
+		}
+	});
 	return {
 		labels: ["genre 1", "genre 2", "genre 3", "genre 4", "genre 5"],
 		datasets: [
 			{
 				label: "Distribution of Genres",
-
 				data: genreCount,
 				backgroundColor: [
 					"rgba(255, 99, 132, 1)",
@@ -30,37 +45,11 @@ const formatData = (genreCount) => {
 	};
 };
 
-function extractGenreCount(masterList) {
-	const g = [0, 0, 0, 0, 0];
-	masterList.forEach((artwork) => {
-		switch (artwork.cat) {
-			case "Painting":
-				g[0]++; // increment the value in index 0 of g by 1
-				break;
-			case "Pottery":
-				g[1]++; // increment the value in index 1 of g by 1
-				break;
-			case "Modernism":
-				g[2]++; // increment the value in index 2 of g by 1
-				break;
-			case "Surrealism":
-				g[3]++; // increment the value in index 3 of g by 1
-				break;
-			case "Poetry":
-				g[4]++; // increment the value in index 4 of g by 1
-				break;
-			default:
-				break;
-		}
-	});
-	return g;
-}
 const Statistics = ({ masterList }) => {
-	const genreCount = extractGenreCount(masterList);
 	return (
 		<div className="page-container">
 			<h2>Statistics</h2>
-			<PieChart formattedData={formatData(genreCount)} />
+			<PieChart formattedData={formatData(masterList)} />
 		</div>
 	);
 };
