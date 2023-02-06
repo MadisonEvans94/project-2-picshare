@@ -12,7 +12,7 @@ function App() {
 	const [searchText, setSearchText] = useState("");
 
 	useEffect(() => {
-		fetch("http://localhost:3200/items")
+		fetch("http://localhost:3000/items")
 			.then((res) => res.json())
 			.then((data) => setMasterList(data));
 	}, []);
@@ -22,17 +22,15 @@ function App() {
 		setSearchText(input);
 	}
 
-
 	// Add new item
 	function onAddItem(newItem) {
-		setMasterList([...masterList, newItem])
+		setMasterList([...masterList, newItem]);
 	}
 
-	const searchResults = masterList.filter((list) =>(
-		list.name.toLowerCase().includes(searchText.toLowerCase()) || 
-		list.artist.toLowerCase().includes(searchText.toLowerCase())
-	)
-		
+	const searchResults = masterList.filter(
+		(list) =>
+			list.name.toLowerCase().includes(searchText.toLowerCase()) ||
+			list.artist.toLowerCase().includes(searchText.toLowerCase())
 	);
 
 	return (
@@ -41,9 +39,24 @@ function App() {
 				<Nav />
 
 				<Routes>
-					<Route exact path="/" element={<Home searchResults={searchResults} onHandleSearch={onHandleSearch} />} />
-					<Route path="/upload" element={<UploadPage onAddItem={onAddItem}/>} />
-					<Route path="/statistics" element={<Statistics />} />
+					<Route
+						exact
+						path="/"
+						element={
+							<Home
+								searchResults={searchResults}
+								onHandleSearch={onHandleSearch}
+							/>
+						}
+					/>
+					<Route
+						path="/upload"
+						element={<UploadPage onAddItem={onAddItem} />}
+					/>
+					<Route
+						path="/statistics"
+						element={<Statistics masterList={masterList} />}
+					/>
 				</Routes>
 			</Router>
 		</>
