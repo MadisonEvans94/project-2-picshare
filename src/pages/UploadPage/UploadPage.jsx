@@ -73,6 +73,9 @@ const UploadPage = ({ onAddItem }) => {
 						<option value="Painting">Painting</option>
 						<option value="Sculpture">Sculpture</option>
 						<option value="Pottery">Pottery</option>
+						<option value="Digital Art">Digital Art</option>
+						<option value="Modern Art">Modern Art</option>
+						<option value="Surrealism">Surrealism</option>
 					</select>
 				</div>
 

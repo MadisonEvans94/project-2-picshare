@@ -1,5 +1,6 @@
 import React from "react";
 import PieChart from "../../components/PieChart/PieChart";
+import "./Statistics.css";
 const formatData = (masterList) => {
 	const genreCount = [0, 0, 0, 0, 0, 0];
 	masterList.forEach((artwork) => {
@@ -62,7 +63,7 @@ const formatData = (masterList) => {
 
 const Statistics = ({ masterList }) => {
 	return (
-		<div className="page-container">
+		<div className="stats-container">
 			<h2>Genre Stats</h2>
 			<PieChart formattedData={formatData(masterList)} />
 		</div>
