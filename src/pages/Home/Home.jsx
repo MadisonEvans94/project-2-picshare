@@ -1,18 +1,13 @@
 import React from "react";
-import Card from "../../components/Card/Card";
-const Home = ({ artworkList }) => {
+import CardList from "../../components/CardList/CardList";
+
+// [ ]: make templist a list of cards..
+
+const templist = [1, 1, 1, 1, 1];
+const Home = () => {
 	return (
 		<div className="page-container">
-			<Card />
-			<Card />
-			<Card />
-			<Card />
-
-			<Card />
-			<Card />
-			<Card />
-			<Card />
-			<Card />
+			<CardList list={templist} />
 		</div>
 	);
 };
