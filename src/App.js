@@ -24,6 +24,7 @@ useEffect (() => {
 		<>
 			<Router>
 				<Nav />
+
 				<Routes>
 					<Route exact path="/" element={<Home masterList={masterList} />} />
 					<Route path="/find-by-user" element={<FindByUser />} />
