@@ -3,7 +3,7 @@ import "./Card.css";
 import testImage from "../../assets/test-images/test-image.jpg";
 import { useState } from "react";
 
-const Card = ({id, name, image, artist, cat, des}) => {
+const Card = ({ id, name, image, artist, cat, des }) => {
 	const [likes, setLikes] = useState(0);
 	/**
 	 * TODO: in future iteration, the likes will be persistent in database.
@@ -28,8 +28,6 @@ const [favText, setFavText] = useState("Add Favorite")
 		
 	}
 
-	
-
 	return (
 		<div className="card-container glass favorite">
 			<img
@@ -37,15 +35,16 @@ const [favText, setFavText] = useState("Add Favorite")
 				style={{
 					width: "100%",
 					backgroundColor: "gray",
-				}} src = {image}
+
+				}}
+				src={image}
 			/>
-				<h2>{name}</h2>
-				<p>Artist: {artist}</p>
-				<p>Genre: {cat}</p>
-				<p>Description: {des}</p>
-				<div>
-			</div>
-			<button id = {favText} className ="like-button" onClick = {handleFav} value={favorite}>{favText}</button> 
+			<h2>{name}</h2>
+			<p>Artist: {artist}</p>
+			<p>Genre: {cat}</p>
+			<p>Description: {des}</p>
+			<div className="like-button" onClick={handleLike}></div>
+
 		</div>
 	);
 };
