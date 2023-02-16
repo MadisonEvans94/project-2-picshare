@@ -12,9 +12,15 @@ const CardList = ({ list }) => {
 	//[ ] so far this is just dummy implementation
 	const cardList = list.map((card) => {
 		return (
-			<>
-				<Card />
-			</>
+				<Card
+				key = {card.id}
+				id = {card.id}
+				name = {card.name}
+				artist = {card.artist}
+				image = {card.image}
+				cat = {card.cat}
+				des = {card.des}
+				/>
 		);
 	});
 
