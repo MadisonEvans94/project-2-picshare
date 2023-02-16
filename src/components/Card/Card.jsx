@@ -16,14 +16,14 @@ const [favText, setFavText] = useState("Add Favorite")
 
 
 	function handleLike() {
-		
+				favorite ? setFavText("Add Favorite") : setFavText("Remove Favorite")
+		return setFavorite(!favorite)
 	} 
 
 
 
 	function handleFav() {
-		favorite ? setFavText("Add Favorite") : setFavText("Remove Favorite")
-		return setFavorite(!favorite)
+
 		
 	}
 
@@ -42,7 +42,7 @@ const [favText, setFavText] = useState("Add Favorite")
 			<p>Artist: {artist}</p>
 			<p>Genre: {cat}</p>
 			<p>Description: {des}</p>
-			<div className="like-button" onClick={handleLike}></div>
+			<button value= {favorite} className="like-button" onClick={handleLike}>{favText}</button>
 
 		</div>
 	);
