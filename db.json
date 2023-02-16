@@ -31,14 +31,6 @@
       "image": "http://pilerats.com/assets/Uploads/_resampled/resizedimage600750-taj1.jpg",
       "cat": "Painting",
       "des": "A really nice Sculpture"
-    },
-    {
-      "name": "test",
-      "artist": "test",
-      "image": "https://secure.img1-cg.wfcdn.com/im/09552281/resize-h800-w800%5Ecompr-r85/1640/164066780/Tangled+Table+Object+In+Off+White+Resin.jpg",
-      "cat": "sculpture",
-      "des": "test",
-      "id": 5
     }
   ]
 }
