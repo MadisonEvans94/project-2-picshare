@@ -3,7 +3,7 @@ import "./Card.css";
 import testImage from "../../assets/test-images/test-image.jpg";
 import { useState } from "react";
 
-const Card = () => {
+const Card = ({id, name, image, artist, cat, des}) => {
 	const [likes, setLikes] = useState(0);
 	/**
 	 * TODO: in future iteration, the likes will be persistent in database.
@@ -16,20 +16,22 @@ const Card = () => {
 		console.log("liked");
 	}
 
+	
+
 	return (
 		<div className="card-container glass">
-			<div
+			<img
 				style={{
-					backgroundImage: `${testImage}`,
 					width: "200px",
 					height: "200px",
 					backgroundColor: "gray",
-				}}></div>
-			<h2>Blue Cloud</h2>
-			<p>this is my artwork!</p>
-			<p>Genre: Futurism</p>
+				}} src = {image}
+				/>
+			<h2>{name}</h2>
+			<p>Artist: {artist}</p>
+			<p>Genre: {cat}</p>
+			<p>Description: {des}</p>
 			<div className="like-button" onClick={handleLike}>
-				+
 			</div>
 		</div>
 	);

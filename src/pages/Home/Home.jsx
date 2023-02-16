@@ -3,12 +3,15 @@ import CardList from "../../components/CardList/CardList";
 
 // [ ]: make templist a list of cards..
 
+
+
 const templist = [1, 1, 1, 1, 1];
-const Home = () => {
+const Home = ({masterList}) => {
 	return (
 		<div className="page-container">
-			<CardList list={templist} />
-		</div>
+			<CardList list={masterList} />
+
+			</div>
 	);
 };
 
