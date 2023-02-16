@@ -12,17 +12,30 @@ const Card = ({ id, name, image, artist, cat, des }) => {
 	 * liked or disliked the post
 	 */
 
+const [favorite, setFavorite] = useState(false);
+const [favText, setFavText] = useState("Add Favorite")
+
+
 	function handleLike() {
-		console.log("liked");
+		
+	} 
+
+
+
+	function handleFav() {
+		favorite ? setFavText("Add Favorite") : setFavText("Remove Favorite")
+		return setFavorite(!favorite)
+		
 	}
 
 	return (
-		<div className="card-container glass">
+		<div className="card-container glass favorite">
 			<img
+				className="image"
 				style={{
-					width: "200px",
-					height: "200px",
+					width: "100%",
 					backgroundColor: "gray",
+
 				}}
 				src={image}
 			/>
@@ -31,6 +44,7 @@ const Card = ({ id, name, image, artist, cat, des }) => {
 			<p>Genre: {cat}</p>
 			<p>Description: {des}</p>
 			<div className="like-button" onClick={handleLike}></div>
+
 		</div>
 	);
 };
