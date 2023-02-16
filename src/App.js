@@ -23,6 +23,11 @@ function App() {
 	}
 
 
+	// Add new item
+	function onAddItem(newItem) {
+		setMasterList([...masterList, newItem])
+	}
+
 	const searchResults = masterList.filter((list) =>(
 		list.name.toLowerCase().includes(searchText.toLowerCase()) || 
 		list.artist.toLowerCase().includes(searchText.toLowerCase())
@@ -37,7 +42,7 @@ function App() {
 
 				<Routes>
 					<Route exact path="/" element={<Home searchResults={searchResults} onHandleSearch={onHandleSearch} />} />
-					<Route path="/find-by-user" element={<UploadPage />} />
+					<Route path="/upload" element={<UploadPage onAddItem={onAddItem}/>} />
 					<Route path="/statistics" element={<Statistics />} />
 				</Routes>
 			</Router>
