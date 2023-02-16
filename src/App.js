@@ -4,7 +4,6 @@ import Nav from "./components/Nav/Nav";
 import Home from "./pages/Home/Home";
 import Statistics from "./pages/Statistics/Statistics";
 import UploadPage from "./pages/UploadPage/UploadPage";
-import FindByUser from "./pages/FindByUser/FindByUser";
 import { BrowserRouter as Router } from "react-router-dom";
 import { Routes, Route } from "react-router-dom";
 
@@ -18,15 +17,18 @@ function App() {
 			.then((data) => setMasterList(data));
 	}, []);
 
-	// Search by artist
+	// Search
 	function onHandleSearch(input) {
 		setSearchText(input);
 	}
 
-	const searchResults = masterList.filter((list) =>
-		list.name.toLowerCase().includes(searchText.toLowerCase())
+
+	const searchResults = masterList.filter((list) =>(
+		list.name.toLowerCase().includes(searchText.toLowerCase()) || 
+		list.artist.toLowerCase().includes(searchText.toLowerCase())
+	)
+		
 	);
-	console.log(searchResults);
 
 	return (
 		<>
@@ -34,18 +36,8 @@ function App() {
 				<Nav />
 
 				<Routes>
-					<Route exact path="/" element={<Home masterList={masterList} />} />
-
-					<Route
-						path="/find-by-artist"
-						element={
-							<FindByUser
-								onHandleSearch={onHandleSearch}
-								searchResults={searchResults}
-							/>
-						}
-					/>
-
+					<Route exact path="/" element={<Home searchResults={searchResults} onHandleSearch={onHandleSearch} />} />
+					<Route path="/find-by-user" element={<UploadPage />} />
 					<Route path="/statistics" element={<Statistics />} />
 				</Routes>
 			</Router>

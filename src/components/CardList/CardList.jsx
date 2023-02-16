@@ -6,20 +6,18 @@ import Card from "../Card/Card";
  * @returns
  */
 const CardList = ({ list }) => {
-	//const [cardList, setCardList] = useState([]);
-	if (list === undefined) return <></>;
 
 	//[ ] so far this is just dummy implementation
 	const cardList = list.map((card) => {
 		return (
 				<Card
-				key = {card.id}
-				id = {card.id}
-				name = {card.name}
-				artist = {card.artist}
-				image = {card.image}
-				cat = {card.cat}
-				des = {card.des}
+					key = {card.id}
+					id = {card.id}
+					name = {card.name}
+					artist = {card.artist}
+					image = {card.image}
+					cat = {card.cat}
+					des = {card.des}
 				/>
 		);
 	});
