@@ -6,7 +6,6 @@ const Card = ({ id, name, image, artist, cat, des }) => {
 	const [likes, setLikes] = useState(0);
 	const [favorite, setFavorite] = useState(false);
 	const [favText, setFavText] = useState("Add Favorite");
-	const [favCount, setFavCount] = useState(0);
 
 	useEffect(() => {
 		fetch(`http://localhost:3200/items/${id}`)
@@ -40,7 +39,6 @@ const Card = ({ id, name, image, artist, cat, des }) => {
 		handleDivId();
 	}
 
-	// favorite ? setFavText("Add Favorite") : setFavText("Remove Favorite")
 
 	function handleFavText() {
 		if (favorite) {
@@ -55,16 +53,16 @@ const Card = ({ id, name, image, artist, cat, des }) => {
 	//[ ] this functionality might need a second look. Commenting out for now
 	function handleDivId() {
 		if (favorite) {
-			// const element = document.getElementById(`${id}`);
-			// return element.classList.add("favorite-card");
+			const element = document.getElementById(`${id}`);
+			return element.classList.add("favorite-card");
 		} else {
-			// const element = document.getElementById(`${id}`);
-			// return element.classList.remove("favorite-card");
+			const element = document.getElementById(`${id}`);
+			return element.classList.remove("favorite-card");
 		}
 	}
 
-	//// The function below stalled the app, not sure how else to get the class into the element.
-	handleDivId();
+	// //// The function below stalled the app, not sure how else to get the class into the element.
+	// handleDivId();
 
 	return (
 		<div id={id} className="card-container normal-card">
