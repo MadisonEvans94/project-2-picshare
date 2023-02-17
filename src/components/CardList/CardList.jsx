@@ -18,11 +18,12 @@ const CardList = ({ list }) => {
 					image = {card.image}
 					cat = {card.cat}
 					des = {card.des}
+					fav = {card.fav}
 				/>
 		);
 	});
 
-	return <div>{cardList}</div>;
+	return <div class="card-list-container">{cardList}</div>;
 };
 
 export default CardList;
