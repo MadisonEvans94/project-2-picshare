@@ -15,11 +15,10 @@ const UploadPage = ( {onAddItem} ) => {
 	const [formData, setFormData] = useState(initialValue)
 
 	function handleInput(e) {
-		const name = e.target.name
 		const value = e.target.value
+		const name = e.target.name
 		setFormData({...formData, [name]: value})
 	}
-
 
 	function handleSubmit(e) {
 		e.preventDefault()
@@ -67,12 +66,16 @@ const UploadPage = ( {onAddItem} ) => {
 							   value={formData.image}
 							   onChange={handleInput}
 						/>
-						<input type="text" 
-							   name="cat"
-							   placeholder="category"
-							   value={formData.cat}
-							   onChange={handleInput}
-						/>
+						<div>
+							<select name="cat" defaultValue="default" onChange={handleInput}>
+								<option name ="default" value="default"  disabled>Select a Category</option>
+								<option value="Painting">Painting</option>
+								<option value="Sculpture">Sculpture</option>
+								<option value="Pottery">Pottery</option>
+							</select>
+						</div>
+
+
 						<input type="text" 
 							   name="des"
 							   placeholder="description"
