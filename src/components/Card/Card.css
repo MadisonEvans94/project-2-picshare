@@ -4,27 +4,31 @@
 	align-content: center;
 }
 .card-container {
+	min-height: auto;
 	position: relative;
 	display: inline-block;
-	width: 12rem;
-
+	width: 13rem;
 	border-bottom-left-radius: 3rem;
 	border-top-right-radius: 3rem;
-	/* padding: 2rem; */
-	margin: 5rem;
-	display: flex;
+	margin: 3rem;
+	display: inline-block;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	background-color: rgba(22, 28, 28, 0.404)
 }
 
 .like-button {
 	cursor: pointer;
 }
 
+.image-div {
+	min-height: 17rem;
+}
+
 .image { 
 	border-top-right-radius: 3rem;
-	align-self: top;
+	object-fit: fill;
 }
 
 .like-button {
@@ -34,6 +38,7 @@
 .normal-card, .favorite-card {
 	opacity: 80%;
 	transition-duration: .75s;
+	transition-duration: border-color 2s;
 
 	/* transition: ease-out 1s; */
 
@@ -42,8 +47,13 @@
 .normal-card:hover, 
 .favorite-card:hover {
 	opacity: 100%;
-	transform: scale(1.1);
+	transform: scale(1.03);
 	cursor: pointer;
+	border: solid .01rem rgba(245, 245, 245, 0.319);
+}
+
+h4 {
+	margin:0
 }
 
 li {
@@ -52,10 +62,11 @@ li {
 
 .favorite-card {
 	border-style: solid;
-	border-color: rgba(218, 165, 32, 0.864);
-	box-shadow: 0px 0px 2px goldenrod;
-	box-shadow: 0px 0px 4px goldenrod;
-	box-shadow: 0px 0px 6px goldenrod;
+	border-width: .005rem;
+	border-color: rgba(218, 165, 32, 0.896);
+	box-shadow: 0px 0px 4px rgba(218, 165, 32, 0.919);
+	box-shadow: 0px 0px 8px rgba(218, 165, 32, 0.793);
+	box-shadow: 0px 0px 16px rgba(218, 165, 32, 0.545);
 	opacity: 100%;
 }
 

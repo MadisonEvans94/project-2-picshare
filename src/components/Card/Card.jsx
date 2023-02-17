@@ -11,7 +11,7 @@ const Card = ({ id, name, image, artist, cat, des }) => {
 	 * liked or disliked the post
 	 */
 
-	
+
 
 
 const [favorite, setFavorite] = useState(false);
@@ -73,13 +73,18 @@ function handleDivId() {
 }
 
 
+//// The function below stalled the app, not sure how else to get the class into the element.
+handleDivId()
+
+
 
 
 
 	return (
 		<div 
 		id = {id}
-		className="card-container glass normal-card">
+		className="card-container normal-card">
+			<div className = "image-div">
 			<img
 				className="image"
 				style={{
@@ -89,6 +94,7 @@ function handleDivId() {
 				}}
 				src={image}
 			/>
+			</div>
 			<h4>{name}</h4>
 			<li>Artist: {artist}</li>
 			<li>Genre: {cat}</li>
