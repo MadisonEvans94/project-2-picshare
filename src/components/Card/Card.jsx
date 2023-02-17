@@ -1,6 +1,6 @@
 import React from "react";
 import "./Card.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Card = ({ id, name, image, artist, cat, des }) => {
 	const [likes, setLikes] = useState(0);
@@ -11,24 +11,75 @@ const Card = ({ id, name, image, artist, cat, des }) => {
 	 * liked or disliked the post
 	 */
 
+	
+
+
 const [favorite, setFavorite] = useState(false);
-const [favText, setFavText] = useState("Add Favorite")
+const [favText, setFavText] = useState("Add Favorite");
+const [favCount, setFavCount] = useState(0)
 
 
-	function handleLike() {
-				favorite ? setFavText("Add Favorite") : setFavText("Remove Favorite")
-		return setFavorite(!favorite)
-	} 
+useEffect(()=>{fetch(`http://localhost:3200/items/${id}`)
+	.then(res => res.json())
+	.then(data => setFavorite(data.fav))},[])
+
+
+	useEffect(()=>{	fetch(`http://localhost:3200/items/${id}`)
+	.then(res => res.json())
+	.then(data => console.log(JSON.stringify(data.favText)))},[])
+
+	console.log(favorite, favText )
+	function handlePatch() {
+		fetch(`http://localhost:3200/items/${id}`, {
+			method: "PATCH",
+			headers: {
+				"content-type": "application/json"
+			},
+			body: JSON.stringify({
+			fav: favorite,
+			})
+})}
 
 
 
-	function handleFav() {
+	function handleLike() {		
+				setFavorite(!favorite)			
+				handleFavText()
+					handlePatch()
+					handleDivId()
+}
 
-		
+
+// favorite ? setFavText("Add Favorite") : setFavText("Remove Favorite")
+
+function handleFavText() {
+	if (favorite) {
+		setFavText("Remove Favorite")
+		handlePatch()
+	} else {
+		setFavText("Add Favorite")
+		handlePatch()
 	}
+}
+
+function handleDivId() {
+	if (favorite) {
+		const element = document.getElementById(`${id}`)
+		return element.classList.add("favorite-card")
+	} else {
+		const element = document.getElementById(`${id}`)
+		return element.classList.remove("favorite-card")
+	}
+}
+
+
+
+
 
 	return (
-		<div className="card-container glass favorite">
+		<div 
+		id = {id}
+		className="card-container glass normal-card">
 			<img
 				className="image"
 				style={{
@@ -38,11 +89,17 @@ const [favText, setFavText] = useState("Add Favorite")
 				}}
 				src={image}
 			/>
-			<h2>{name}</h2>
-			<p>Artist: {artist}</p>
-			<p>Genre: {cat}</p>
-			<p>Description: {des}</p>
-			<button value= {favorite} className="like-button" onClick={handleLike}>{favText}</button>
+			<h4>{name}</h4>
+			<li>Artist: {artist}</li>
+			<li>Genre: {cat}</li>
+			<li>Description: {des}</li>
+			<button
+			
+			value= {id} 
+			className="like-button" 
+			onClick={handleLike}>
+				Toggle Favorite
+				</button>
 
 		</div>
 	);

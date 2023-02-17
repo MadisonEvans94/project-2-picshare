@@ -1,9 +1,17 @@
+.page-container {
+	width: 100%;
+	Height: 100%;
+	align-content: center;
+}
 .card-container {
-	max-width: 300px;
+	position: relative;
+	display: inline-block;
+	width: 12rem;
+
 	border-bottom-left-radius: 3rem;
 	border-top-right-radius: 3rem;
 	/* padding: 2rem; */
-	margin: 1rem 3rem 0 3rem;
+	margin: 5rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -16,8 +24,38 @@
 
 .image { 
 	border-top-right-radius: 3rem;
+	align-self: top;
 }
 
 .like-button {
 	margin-bottom: .75rem;
 }
+
+.normal-card, .favorite-card {
+	opacity: 80%;
+	transition-duration: .75s;
+
+	/* transition: ease-out 1s; */
+
+}
+
+.normal-card:hover, 
+.favorite-card:hover {
+	opacity: 100%;
+	transform: scale(1.1);
+	cursor: pointer;
+}
+
+li {
+	list-style: none;
+}
+
+.favorite-card {
+	border-style: solid;
+	border-color: rgba(218, 165, 32, 0.864);
+	box-shadow: 0px 0px 2px goldenrod;
+	box-shadow: 0px 0px 4px goldenrod;
+	box-shadow: 0px 0px 6px goldenrod;
+	opacity: 100%;
+}
+

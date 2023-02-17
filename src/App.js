@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import "./App.css";
+import CardList from "./components/CardList/CardList.jsx"
 import Nav from "./components/Nav/Nav";
 import Home from "./pages/Home/Home";
 import Statistics from "./pages/Statistics/Statistics";

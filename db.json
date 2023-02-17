@@ -6,7 +6,8 @@
       "name": "Sun",
       "image": "https://images.squarespace-cdn.com/content/v1/52c4a7bbe4b0f4e69d94616f/1470938099754-4DMHBO56C3U0SYM581MU/3littlebirds_artwork_02_sml.jpg?format=500w",
       "cat": "Painting",
-      "des": "A really nice Sculpture"
+      "des": "A really nice Sculpture",
+      "fav": false
     },
     {
       "id": 2,
@@ -14,7 +15,8 @@
       "name": "Moon",
       "image": "https://www.designindaba.com/sites/default/files/node/news/22299/gallery/62fa4e26419207.563552f227d17.jpg",
       "cat": "Sculpture",
-      "des": "A really nice Sculpture"
+      "des": "A really nice Sculpture",
+      "fav": false
     },
     {
       "id": 3,
@@ -22,7 +24,8 @@
       "name": "Stars",
       "image": "https://i.pinimg.com/564x/c5/8c/6e/c58c6e78f7cb6c510207d0f0e3eaf2d0.jpg",
       "cat": "Pottery",
-      "des": "A really nice Sculpture"
+      "des": "A really nice Sculpture",
+      "fav": false
     },
     {
       "id": 4,
@@ -30,15 +33,66 @@
       "name": "Cloud",
       "image": "http://pilerats.com/assets/Uploads/_resampled/resizedimage600750-taj1.jpg",
       "cat": "Painting",
-      "des": "A really nice Sculpture"
+      "des": "A really nice Sculpture",
+      "fav": false
     },
     {
+      "id": 5,
       "name": "test",
       "artist": "test",
-      "image": "https://secure.img1-cg.wfcdn.com/im/09552281/resize-h800-w800%5Ecompr-r85/1640/164066780/Tangled+Table+Object+In+Off+White+Resin.jpg",
+      "image": "https://cdnb.artstation.com/p/assets/images/images/052/049/571/medium/creative-gaga-samji-1653540419562.jpg?1658835336",
       "cat": "sculpture",
       "des": "test",
-      "id": 5
+      "fav": false
+    },
+    {
+      "name": "Illustrious Collar",
+      "artist": "Samji",
+      "image": "https://cdna.artstation.com/p/assets/images/images/052/049/560/medium/creative-gaga-samji-1654577661304.jpg?1658835323",
+      "cat": "Digital Art",
+      "des": "Illustrious Collar",
+      "id": 6
+    },
+    {
+      "name": "Flames of Jealousy",
+      "artist": "Samji",
+      "image": "https://media.licdn.com/dms/image/C5622AQFMdEGVdm6eKA/feedshare-shrink_800/0/1647405477932?e=1678924800&v=beta&t=3-eE9QGsfiRT7VaGYS6Nr6zsTOJHWMxLAEzM4NzHUqE",
+      "cat": "Digital Art",
+      "des": "Flames of Jealousy",
+      "id": 7,
+      "fav": true
+    },
+    {
+      "name": "Exuberant Perception",
+      "artist": "Samji",
+      "image": "https://i.pinimg.com/564x/62/6a/4b/626a4b7937bc571ef560a9b2551c531e.jpg",
+      "cat": "Digital Art",
+      "des": "Exuberant Perception",
+      "id": 8
+    },
+    {
+      "name": "Dictator of Belief",
+      "artist": "Samji",
+      "image": "https://cdnb.artstation.com/p/assets/images/images/051/518/201/medium/creative-gaga-samji-1652155490192.jpg?1657514519",
+      "cat": "Digital Art",
+      "des": "Dictator of Belief",
+      "id": 9
+    },
+    {
+      "name": "Oblivious Ambition",
+      "artist": "Samji",
+      "image": "https://cdnb.artstation.com/p/assets/images/images/051/518/205/medium/creative-gaga-samji-1652849619720.jpg?1657514534",
+      "cat": "Digital Art",
+      "des": "Oblivious Ambition",
+      "id": 10
+    },
+    {
+      "name": "Evening Sees",
+      "artist": "Taj Francis",
+      "image": "https://wowxwow.com/wp-content/uploads/2020/02/Taj-Francis-Evening-Sees-800x900.jpg",
+      "cat": "Modern Art",
+      "des": "Evening Sees",
+      "id": 11
     }
   ]
 }
