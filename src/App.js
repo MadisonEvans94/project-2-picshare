@@ -7,61 +7,68 @@ import Statistics from "./pages/Statistics/Statistics";
 import UploadPage from "./pages/UploadPage/UploadPage";
 import { BrowserRouter as Router } from "react-router-dom";
 import { Routes, Route } from "react-router-dom";
+import { getAllPosts } from "../Firebase/endpoints/posts";
 
 function App() {
-	const [masterList, setMasterList] = useState([]);
-	const [searchText, setSearchText] = useState("");
+    const [masterList, setMasterList] = useState([]);
+    const [searchText, setSearchText] = useState("");
 
-	useEffect(() => {
-		fetch("http://localhost:3200/items")
-			.then((res) => res.json())
-			.then((data) => setMasterList(data));
-	}, []);
+    useEffect(() => {
+        const fetchPosts = async () => {
+            try {
+                const posts = await getAllPosts();
+                setMasterList(posts);
+            } catch (error) {
+            }
+        };
 
-	// Search
-	function onHandleSearch(input) {
-		setSearchText(input);
-	}
+        fetchPosts();
+    }, []); // Empty dependency array means the effect runs only once, on component mount
 
-	// Add new item
-	function onAddItem(newItem) {
-		setMasterList([...masterList, newItem]);
-	}
+    // Search
+    function onHandleSearch(input) {
+        setSearchText(input);
+    }
 
-	const searchResults = masterList.filter(
-		(list) =>
-			list.name.toLowerCase().includes(searchText.toLowerCase()) ||
-			list.artist.toLowerCase().includes(searchText.toLowerCase())
-	);
+    // Add new item
+    function onAddItem(newItem) {
+        setMasterList([...masterList, newItem]);
+    }
 
-	return (
-		<>
-			<Router>
-				<Nav />
+    const searchResults = masterList.filter(
+        (list) =>
+            list.name.toLowerCase().includes(searchText.toLowerCase()) ||
+            list.artist.toLowerCase().includes(searchText.toLowerCase())
+    );
 
-				<Routes>
-					<Route
-						exact
-						path="/"
-						element={
-							<Home
-								searchResults={searchResults}
-								onHandleSearch={onHandleSearch}
-							/>
-						}
-					/>
-					<Route
-						path="/upload"
-						element={<UploadPage onAddItem={onAddItem} />}
-					/>
-					<Route
-						path="/statistics"
-						element={<Statistics masterList={masterList} />}
-					/>
-				</Routes>
-			</Router>
-		</>
-	);
+    return (
+        <>
+            <Router>
+                <Nav />
+
+                <Routes>
+                    <Route
+                        exact
+                        path="/"
+                        element={
+                            <Home
+                                searchResults={searchResults}
+                                onHandleSearch={onHandleSearch}
+                            />
+                        }
+                    />
+                    <Route
+                        path="/upload"
+                        element={<UploadPage onAddItem={onAddItem} />}
+                    />
+                    <Route
+                        path="/statistics"
+                        element={<Statistics masterList={masterList} />}
+                    />
+                </Routes>
+            </Router>
+        </>
+    );
 }
 
 export default App;
